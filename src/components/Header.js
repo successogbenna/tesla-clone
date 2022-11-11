@@ -10,34 +10,34 @@ function Header() {
                 <img src='/images/logo.svg' alt="" />
             </a>
             <Menu>
-              <p><a href="#">Model S</a></p>
-                <p><a href="#">Model 3</a></p>
-                <p><a href="#">Model X</a></p>
-                <p><a href="#">Model Y</a></p>
+              <p><a href="/home">Model S</a></p>
+                <p><a href="/home">Model 3</a></p>
+                <p><a href="/home">Model X</a></p>
+                <p><a href="/home">Model Y</a></p>
             </Menu>
             <RightMenu>
-                <a href="#">Shop</a>
-                <a href="#">Telsa Account</a>
+                <a href="/home">Shop</a>
+                <a href="/home">Telsa Account</a>
                 <CustomMenu onClick={()=>{setBurgerStatus(true)}}/>
             </RightMenu>
             <BurgerNav show={burgerStatus}>
                 <CloseWrapper onClick={() => { setBurgerStatus(false) }}>
                     <CustomClose />
                 </CloseWrapper>
-                <li><a href="#">Existing Inventory</a></li>
-                <li><a href="#">Used Inventory</a></li>
-                <li><a href="#">Trade-In</a></li>
-                <li><a href="#">Test Drive</a></li>
-                <li><a href="#">Insurance</a></li>
-                <li><a href="#">Cybertruck</a></li>
-                <li><a href="#">Roadster</a></li>
-                <li><a href="#">Semi</a></li>
-                <li><a href="#">Charging</a></li>
-                <li><a href="#">Powerall</a></li>
-                <li><a href="#">Utilities</a></li>
-                <li><a href="#">Find Us</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Investors Relationship</a></li>
+                <li><a href="/home">Existing Inventory</a></li>
+                <li><a href="/home">Used Inventory</a></li>
+                <li><a href="/home">Trade-In</a></li>
+                <li><a href="/home">Test Drive</a></li>
+                <li><a href="/home">Insurance</a></li>
+                <li><a href="/home">Cybertruck</a></li>
+                <li><a href="/home">Roadster</a></li>
+                <li><a href="/home">Semi</a></li>
+                <li><a href="/home">Charging</a></li>
+                <li><a href="/home">Powerall</a></li>
+                <li><a href="/home">Utilities</a></li>
+                <li><a href="/home">Find Us</a></li>
+                <li><a href="/home">Support</a></li>
+                <li><a href="/home">Investors Relationship</a></li>
             </BurgerNav>
         </Container>
     );
