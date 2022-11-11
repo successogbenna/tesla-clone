@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
-const Section = ({ title, description, backgroundImg, leftBtnText, rightBtnText }) => {
+
+const Section = ({ title, description, backgroundImg, leftBtnText, rightBtnText,id }) => {
     return (
-        <Wrap bgImage={backgroundImg}>
+        <div className="container">
+            <Wrap bgImage={backgroundImg}>
             <Fade bottom>
                 <ItemText>
                     <h1>{title}</h1>
@@ -22,10 +24,13 @@ const Section = ({ title, description, backgroundImg, leftBtnText, rightBtnText 
                             </RightButton>
                         }
                     </ButtonGroup>
-                </Fade>
-                <DownArrow src='/images/down-arrow.svg' />
+                    </Fade>
+                    {title === 'Model S' && <a href="#section_y"><DownArrow src='/images/down-arrow.svg' href='' /></a>}
+                    
             </Buttons>
         </Wrap>
+        </div>
+        
     );
 };
 
